@@ -20,7 +20,8 @@ fun main(args: Array<String>) {
 
 val operators : List<(Long, Long) -> Long> = listOf(
     fun (a, b) = a + b,
-    fun (a, b) = a * b
+    fun (a, b) = a * b,
+    fun (a, b) = (a.toString() + b.toString()).toLong() // part two
 )
 
 class Equation(
